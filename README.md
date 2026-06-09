@@ -16,6 +16,12 @@
 
 本项目按 Java 8 编译，装 JDK 8 或更高版本都可以。
 
+为什么要安装 JDK：
+
+- JDK 是 Java 开发工具包，里面包含运行 Java 程序需要的 `java`，也包含把 `.java` 源代码编译成 `.class` 字节码需要的 `javac`
+- 只装 JRE 通常只能运行已经编译好的程序，不能完整开发和编译 Java 项目
+- IDEA、Maven 运行本项目时都会依赖本机 JDK；没有 JDK，就会出现找不到 Java SDK、无法编译、无法运行 `main` 方法等问题
+
 推荐版本：
 
 - 新手兼容优先：JDK 8
@@ -30,6 +36,12 @@ javac -version
 
 ### 2. 安装 Maven
 
+为什么要安装 Maven：
+
+- Maven 是 Java 项目构建工具，负责按 `pom.xml` 里的配置编译代码、运行测试、下载依赖、打包项目
+- 本项目虽然主要是基础 demo，但已经按 Maven 项目结构组织，后面学习 Spring Boot、MyBatis、JUnit 时也都会用到 Maven
+- 在命令行里执行 `mvn clean compile` 可以一次性检查整个项目有没有编译错误，比只在 IDEA 里运行单个文件更稳
+
 检查 Maven：
 
 ```bash
@@ -41,6 +53,12 @@ mvn -version
 ### 3. 安装 IntelliJ IDEA
 
 建议安装 IntelliJ IDEA Community Edition，免费版足够学习 Java 基础。
+
+为什么建议安装 IDEA：
+
+- IDEA 可以自动识别 Maven 项目、配置 JDK、提示语法错误，并且可以直接点击 `main` 方法旁边的绿色按钮运行
+- 初学 Java 时最重要的是会调试，IDEA 能打断点、单步执行、查看变量值，比只看代码更容易理解程序怎么跑
+- 以后写真实项目时，也会长期使用 IDE 来管理包、类、依赖和调试流程
 
 导入方式：
 
