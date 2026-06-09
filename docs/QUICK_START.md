@@ -5,23 +5,23 @@
 1. 打开项目目录
 2. 等待 Maven 加载完成
 3. 展开 `src/main/java/com/example/javabasic`
-4. 打开任意 `*Demo.java`
+4. 先打开 `p01_start/D01HelloWorldDemo.java`
 5. 点击 `main` 方法左侧绿色按钮
 
 ## 推荐第一天学习任务
 
 按顺序运行：
 
-1. `HelloWorldDemo`
-2. `CommentsAndPrintDemo`
-3. `VariableDemo`
-4. `DataTypeDemo`
-5. `OperatorDemo`
-6. `ControlFlowDemo`
-7. `StringCommonFunctionsDemo`
-8. `ArrayAlgorithmDemo`
-9. `MethodBasicDemo`
-10. `DebugDemo`
+1. `p01_start/D01HelloWorldDemo`
+2. `p01_start/D02CommentsAndPrintDemo`
+3. `p02_syntax/D01VariableDemo`
+4. `p02_syntax/D02DataTypeDemo`
+5. `p02_syntax/D04OperatorDemo`
+6. `p02_syntax/D05ControlFlowDemo`
+7. `p03_string/D02StringCommonFunctionsDemo`
+8. `p04_array/D02ArrayAlgorithmDemo`
+9. `p05_method/D01MethodBasicDemo`
+10. `p11_debug/D01DebugDemo`
 
 第一天目标不是背 API，而是能做到：
 

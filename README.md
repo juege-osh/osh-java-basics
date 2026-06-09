@@ -2,6 +2,8 @@
 
 这个项目给 Java 初学者使用，所有 demo 都放在 `src/main/java/com/example/javabasic` 下，并且每个 demo 类都有自己的 `main` 方法，可以在 IDEA 里单独运行。
 
+目录和文件已经按学习顺序编号：先看 `p01_start`，再看 `p02_syntax`；每个文件夹里再从 `D01...`、`D02...` 往后调试。这样在 IDEA 或 GitHub 里按名称排序，就是推荐学习顺序。
+
 ## 适合谁
 
 - 刚开始学 Java 的学生
@@ -46,7 +48,7 @@ mvn -version
 2. 选择 `Open`
 3. 选择本项目目录
 4. 等待 Maven 自动加载
-5. 打开任意 `Demo.java`
+5. 从 `p01_start/D01HelloWorldDemo.java` 开始
 6. 点击 `main` 方法左侧绿色运行按钮
 
 ## 命令行运行
@@ -60,7 +62,7 @@ mvn clean compile
 运行某个 demo，例如 HelloWorld：
 
 ```bash
-mvn -q exec:java -Dexec.mainClass=com.example.javabasic.start.HelloWorldDemo
+mvn -q exec:java -Dexec.mainClass=com.example.javabasic.p01_start.D01HelloWorldDemo
 ```
 
 如果没有配置 `exec-maven-plugin`，也可以优先在 IDEA 里运行。
@@ -69,102 +71,102 @@ mvn -q exec:java -Dexec.mainClass=com.example.javabasic.start.HelloWorldDemo
 
 建议按下面顺序学，不要一上来跳到集合和 Stream。
 
-1. `start`：HelloWorld、输出、注释、小练习
-2. `syntax`：变量、数据类型、类型转换、运算符、流程控制、输入
-3. `string`：String 常见函数、比较、StringBuilder、格式化、正则
-4. `array`：一维数组、二维数组、数组常见算法
-5. `method`：方法、返回值、重载、递归
-6. `oop`：类和对象、封装、继承、多态、接口、抽象类、枚举
-7. `exception`：异常捕获、主动抛异常、自定义异常
-8. `collection`：List、Set、Map、Iterator、泛型、Collections 工具类
-9. `modern`：Lambda、Stream、Optional、日期时间、BigDecimal
-10. `io`：File、文件读写、try-with-resources
-11. `debug`：断点调试练习
+1. `p01_start`：HelloWorld、输出、注释、小练习
+2. `p02_syntax`：变量、数据类型、类型转换、运算符、流程控制、输入
+3. `p03_string`：String 常见函数、比较、StringBuilder、格式化、正则
+4. `p04_array`：一维数组、二维数组、数组常见算法
+5. `p05_method`：方法、返回值、重载、递归
+6. `p06_oop`：类和对象、封装、继承、多态、接口、抽象类、枚举
+7. `p07_exception`：异常捕获、主动抛异常、自定义异常
+8. `p08_collection`：List、Set、Map、Iterator、泛型、Collections 工具类
+9. `p09_modern`：Lambda、Stream、Optional、日期时间、BigDecimal
+10. `p10_io`：File、文件读写、try-with-resources
+11. `p11_debug`：断点调试练习
 
 ## Demo 清单
 
-### start
+### p01_start
 
-- `HelloWorldDemo`：第一个 Java 程序
-- `CommentsAndPrintDemo`：注释和打印输出
-- `MiniPracticeDemo`：输入三科成绩并计算总分、平均分、等级
+- `D01HelloWorldDemo`：第一个 Java 程序
+- `D02CommentsAndPrintDemo`：注释和打印输出
+- `D03MiniPracticeDemo`：输入三科成绩并计算总分、平均分、等级
 
-### syntax
+### p02_syntax
 
-- `VariableDemo`：变量、常量、交换变量
-- `DataTypeDemo`：8 种基本类型、范围、整数溢出
-- `TypeConversionDemo`：自动转换、强制转换、整数除法
-- `OperatorDemo`：算术、比较、逻辑、三元运算符
-- `ControlFlowDemo`：if、switch、for、while、break、continue
-- `InputScannerDemo`：Scanner 控制台输入
-- `ScopeDemo`：变量作用域
-- `WrapperClassDemo`：包装类、自动装箱拆箱、字符串转数字
-- `MathRandomDemo`：Math 和 Random
+- `D01VariableDemo`：变量、常量、交换变量
+- `D02DataTypeDemo`：8 种基本类型、范围、整数溢出
+- `D03TypeConversionDemo`：自动转换、强制转换、整数除法
+- `D04OperatorDemo`：算术、比较、逻辑、三元运算符
+- `D05ControlFlowDemo`：if、switch、for、while、break、continue
+- `D06InputScannerDemo`：Scanner 控制台输入
+- `D07ScopeDemo`：变量作用域
+- `D08WrapperClassDemo`：包装类、自动装箱拆箱、字符串转数字
+- `D09MathRandomDemo`：Math 和 Random
 
-### string
+### p03_string
 
-- `StringBasicDemo`：String 基础用法
-- `StringCommonFunctionsDemo`：常见 String 函数
-- `StringCompareDemo`：`==` 和 `equals` 区别
-- `StringBuilderDemo`：字符串高效拼接
-- `StringFormatAndRegexDemo`：格式化、正则匹配、替换
+- `D01StringBasicDemo`：String 基础用法
+- `D02StringCommonFunctionsDemo`：常见 String 函数
+- `D03StringCompareDemo`：`==` 和 `equals` 区别
+- `D04StringBuilderDemo`：字符串高效拼接
+- `D05StringFormatAndRegexDemo`：格式化、正则匹配、替换
 
-### array
+### p04_array
 
-- `ArrayBasicDemo`：数组定义、访问、修改、遍历
-- `ArrayAlgorithmDemo`：求和、平均值、最大值、最小值、排序、查找
-- `TwoDimensionalArrayDemo`：二维数组
+- `D01ArrayBasicDemo`：数组定义、访问、修改、遍历
+- `D02ArrayAlgorithmDemo`：求和、平均值、最大值、最小值、排序、查找
+- `D03TwoDimensionalArrayDemo`：二维数组
 
-### method
+### p05_method
 
-- `MethodBasicDemo`：定义方法、参数、返回值
-- `MethodOverloadDemo`：方法重载
-- `RecursionDemo`：递归、阶乘、斐波那契
+- `D01MethodBasicDemo`：定义方法、参数、返回值
+- `D02MethodOverloadDemo`：方法重载
+- `D03RecursionDemo`：递归、阶乘、斐波那契
 
-### oop
+### p06_oop
 
-- `Student`：封装示例类
-- `ClassAndObjectDemo`：类和对象
-- `StaticDemo`：static 变量和方法
-- `InheritanceDemo`：继承
-- `PolymorphismDemo`：多态
-- `InterfaceDemo`：接口
-- `AbstractClassDemo`：抽象类
-- `EnumDemo`：枚举
-- `EqualsHashCodeDemo`：equals 和 hashCode
+- `D01Student`：封装示例类
+- `D02ClassAndObjectDemo`：类和对象
+- `D03StaticDemo`：static 变量和方法
+- `D04InheritanceDemo`：继承
+- `D05PolymorphismDemo`：多态
+- `D06InterfaceDemo`：接口
+- `D07AbstractClassDemo`：抽象类
+- `D08EnumDemo`：枚举
+- `D09EqualsHashCodeDemo`：equals 和 hashCode
 
-### exception
+### p07_exception
 
-- `ExceptionBasicDemo`：try/catch/finally
-- `ThrowExceptionDemo`：主动抛出运行时异常
-- `CustomExceptionDemo`：自定义异常
+- `D01ExceptionBasicDemo`：try/catch/finally
+- `D02ThrowExceptionDemo`：主动抛出运行时异常
+- `D03CustomExceptionDemo`：自定义异常
 
-### collection
+### p08_collection
 
-- `ListDemo`：ArrayList 常见操作
-- `SetDemo`：HashSet、LinkedHashSet、TreeSet
-- `MapDemo`：HashMap 常见操作
-- `GenericsDemo`：泛型类、泛型方法
-- `CollectionsUtilityDemo`：Collections 工具类、排序
-- `IteratorDemo`：Iterator 安全删除元素
+- `D01ListDemo`：ArrayList 常见操作
+- `D02SetDemo`：HashSet、LinkedHashSet、TreeSet
+- `D03MapDemo`：HashMap 常见操作
+- `D04GenericsDemo`：泛型类、泛型方法
+- `D05CollectionsUtilityDemo`：Collections 工具类、排序
+- `D06IteratorDemo`：Iterator 安全删除元素
 
-### modern
+### p09_modern
 
-- `LambdaDemo`：Lambda 和函数式接口
-- `StreamDemo`：filter、map、sum、groupingBy
-- `OptionalDemo`：Optional 避免空值判断混乱
-- `DateTimeDemo`：LocalDate、LocalTime、LocalDateTime
-- `BigDecimalDemo`：金额计算
+- `D01LambdaDemo`：Lambda 和函数式接口
+- `D02StreamDemo`：filter、map、sum、groupingBy
+- `D03OptionalDemo`：Optional 避免空值判断混乱
+- `D04DateTimeDemo`：LocalDate、LocalTime、LocalDateTime
+- `D05BigDecimalDemo`：金额计算
 
-### io
+### p10_io
 
-- `FileBasicDemo`：File 文件和目录操作
-- `FileReadWriteDemo`：NIO 文件读写
-- `TryWithResourcesDemo`：自动关闭资源
+- `D01FileBasicDemo`：File 文件和目录操作
+- `D02FileReadWriteDemo`：NIO 文件读写
+- `D03TryWithResourcesDemo`：自动关闭资源
 
-### debug
+### p11_debug
 
-- `DebugDemo`：练习断点、单步执行、查看变量
+- `D01DebugDemo`：练习断点、单步执行、查看变量
 
 ## IDEA 断点和调试快捷键
 
@@ -185,7 +187,7 @@ mvn -q exec:java -Dexec.mainClass=com.example.javabasic.start.HelloWorldDemo
 
 推荐练习：
 
-1. 打开 `DebugDemo`
+1. 打开 `p11_debug/D01DebugDemo`
 2. 在 `boolean passed = score >= 60;` 这一行打断点
 3. 点击 Debug 运行
 4. 每次按 Step Over，看 `i`、`score`、`passed`、`count` 怎么变化
@@ -230,4 +232,3 @@ mvn -q exec:java -Dexec.mainClass=com.example.javabasic.start.HelloWorldDemo
 7. MyBatis 或 MyBatis-Plus
 8. Redis、消息队列、Linux、Docker
 9. 做一个完整小项目，例如学生管理系统、图书管理系统、博客系统
-
