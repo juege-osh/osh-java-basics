@@ -1,5 +1,8 @@
 package com.example.javabasic.p06_oop;
 
+/**
+ * 学习抽象类：父类规定必须有的方法，子类负责具体实现。
+ */
 public class D07AbstractClassDemo {
     public static void main(String[] args) {
         Shape circle = new Circle(3);
@@ -10,6 +13,7 @@ public class D07AbstractClassDemo {
     }
 
     abstract static class Shape {
+        // abstract 方法没有方法体，子类必须重写。
         public abstract double area();
     }
 
@@ -22,6 +26,7 @@ public class D07AbstractClassDemo {
 
         @Override
         public double area() {
+            // 圆面积公式：π * 半径 * 半径。
             return Math.PI * radius * radius;
         }
     }
@@ -37,6 +42,7 @@ public class D07AbstractClassDemo {
 
         @Override
         public double area() {
+            // 矩形面积公式：宽 * 高。
             return width * height;
         }
     }
